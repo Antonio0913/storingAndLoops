@@ -1,0 +1,57 @@
+Storing methods I learned
+- Array: 
+  -An array is a basic method for storing a set of data of the same type. An array has a fixed size thus you can not add more item to an array than it is initially set up to store.
+  -Array is more suitable for situations where you already know how much items you will be storing, thus your not troubled with going over the size.
+
+- List: 
+  -A list is similar to an array in that they both store things. However a list is dynamic in size, thus it can freely add and remove elements.
+  -A list is more suitable when you are not certain about how much item you will be storing.
+
+List and Array benefits
+- Lists are more convenient and easy to modify in terms of adding and removing data as they have built in functions that help yoiu grown and shrink the list, 
+thus it is much faster when yoiu use it in a situation where items are constantly added and removed.
+- An array stores its contents as a contiguous block of memory containing the elements and their respective location in the memory, 
+whereas a list stores a contiguous block of nodes that point to the element's location in the memory. Thus it is faster to acces contents in an array because you get the element directly.
+
+- Dictionary
+  -A dictionary is like a list in that it is dynamic, but unlike a list it stores two items, a key and a variable.
+  -A dictionary is stored like a hash table in the memory where the key directly leads you to the variable. Just like a function y = 8+5x. Each value for x (key) gives you a y(variable). 
+Just like in a math equation two keys can lead you to the same variable but two variables cant have the same key. 
+
+Dictionary vs List
+  -A dictionary is much faster than a list in terms of finding the data because it employs a hash table which idealy has an O(1) operation time. 
+  -A dictionary however takes up more memory space because it is storing both a key and a variable. Where as a list only stores a variable as they use their index as their key. 
+
+Queue and Stack
+- Queue and stack are really closely related data structures which both derived from list. The special thing about them is that they have a fixed way to append and remove data.
+as data can only enter or leave from either ends of the data structure not the middle. 
+- Queues and stacks also have a unique property where its contents are temprorary in that you only acces the value when its removed.
+- Queue
+  -A queue is used in a firt in first out method, where the items are appended at one end of the list and removed the other end. 
+  -Queues are used specifically when items have to go in FIFO order, such as in a breadth first search where you make sure you look through all 
+the nodes connected to the starting node before you get further depth by looking at newly appended nodes. in general queues are used when you wnat the contents to be proccesed in the order they were inputted
+- Stack
+  - A stack on the otherhand is a First in last out type of storing method. Where the items are appended and removed at the same end of the list.
+  -Examples of stack being employed is in a depth first search where if you keep inspecting the newest node that was inputed to the list so you get to go into further depth of a graph.
+  -Other examples of Stack is searching for palindromes and inversing the order of a list.
+
+Loops
+While 
+-A while loop is basically a loop that runs as long as the condition within the while statement is still true. While loop is usualy usefull when their is an unknown 
+amount of time you want the loop to run for beause you just want to run until the condition is fulfilled. Ofcource you can also use a while loop like a for loop by setting a condition like while(i<9)
+-While loop can also be usefull when you wnat an infinite loop such as when you want repetative inputs from the users.
+DoWhile
+- A do while loop is very simmilar to a while loop with its main difference being a dowhile loop aalways runs at least once. It does so by running an iteration before checking the condition. 
+This could be very helpful when you know you have to execute the code atleast once. It also always have one more iteration than a while loop if you treet it as a for loop for example
+  -While(i<9) is 9 iterations 
+  -DoWhile(i<9)  is 10 iterations
+For
+-A for loop is useful when you know that you want to run a certain code a set amount of iterations because i always gets incremented after each iteration.
+For loop is usefull when you need the i value for certain calculations or it is specifically needed such as if you need the indext of an element in an data structure. for example you might need an item's indext when sorting to swap location
+Foreach
+-A for each loop is usefull when you need to directly acces the individual contents of a list, for example when you iterate through a list of object you can directly get the item withought having to use the indext to find it. 
+Thus it saves one line of code by doing it for you.
+
+For vs Foreach
+-For loop is probrably better as a counter because or when your not iterating through an array or when you need the indext for some form of opperation. 
+-Foreach is only usable when iterating over a list but it is efficient if you are constantly using the contents of the list.
